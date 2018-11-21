@@ -444,26 +444,25 @@
     <div class="row">
       <div class="col-lg-6">
         <div class="well bs-component">
-          <form class="form-horizontal">
+          <form class="form-horizontal" name="contact" method="POST" netlify>
             <fieldset>
               <div class="form-group">
-                <label for="inputEmail" class="col-lg-2 control-label">Email</label>
+                <label for="inputEmail" class="col-lg-2 control-label">Email:</label>
                 <div class="col-lg-10">
-                  <input type="text" class="form-control" id="inputEmail" placeholder="Email">
+                  <input type="email" name="email" class="form-control" id="inputEmail" placeholder="Email">
                 </div>
               </div>
               <div class="form-group">
-                <label for="inputPassword" class="col-lg-2 control-label">Password</label>
+                <label for="inputPassword" class="col-lg-2 control-label">Name:</label>
                 <div class="col-lg-10">
-                  <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                  <input type="text" name="name" class="form-control" id="inputPassword" placeholder="Name">
                 </div>
               </div>
               <div class="form-group">
-                <label for="textArea" class="col-lg-2 control-label">Textarea</label>
+                <label for="textArea" class="col-lg-2 control-label">Your Message</label>
                 <div class="col-lg-10">
-                  <textarea class="form-control" rows="3" id="textArea"></textarea>
-                  <span class="help-block">A longer block of help text that breaks onto a new line and may extend
-                    beyond one line.</span>
+                  <textarea class="form-control" name="message" rows="3" id="textArea"></textarea>
+                  <span class="help-block">We will get back to you as soon as possible</span>
                 </div>
               </div>
               <div class="form-group">
