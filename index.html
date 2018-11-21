@@ -27,6 +27,17 @@
       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
     })();
 
+
+    $('a[href^="#"]').on('click', function(event) {
+    var target = $(this.getAttribute('href'));
+    if( target.length ) {
+        event.preventDefault();
+        $('html, body').stop().animate({
+            scrollTop: target.offset().services
+        }, 1000);
+    }
+});
+
   </script>
 
 </head>
@@ -51,12 +62,12 @@
                   </a>
                 </li>
                 <li>
-                  <a target="_blank" href="https://www.facebook.com/atpeacecentre/">
+                  <a target="_blank" href="https://www.facebook.com/atpeacecentre01/">
                     <i class="fa fa-twitter text-white"></i>
                   </a>
                 </li>
                 <li>
-                  <a target="_blank" href="https://www.instagram.com/atpeacecentre01">
+                  <a target="_blank" href="https://www.instagram.com/atpeacecentre">
                     <i class="fa fa-instagram text-white"></i>
                   </a>
                 </li>
