@@ -449,7 +449,8 @@ footer {
   transition: all 1s ease-in-out;
 }
 
-.fa {
+.fa,
+.fab {
   color: #2fb3f0;
   margin-right: 10px;
   font-size: 14px;
@@ -1641,4 +1642,32 @@ label,
 .well {
   -webkit-box-shadow: none;
   box-shadow: none;
+}
+
+
+
+
+
+/* modal */
+
+.modal.modal-wide .modal-dialog {
+  width: 90%;
+}
+
+.modal-wide .modal-body {
+  overflow-y: auto;
+}
+
+/* irrelevant styling */
+body {
+  text-align: center;
+}
+
+body p {
+  max-width: 400px;
+  margin: 20px auto;
+}
+
+#tallModal .modal-body p {
+  margin-bottom: 900px
 }

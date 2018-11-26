@@ -14,7 +14,12 @@
   <link rel="stylesheet" href="css/main.css">
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <script src="js/main.js"></script>
+  <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
 
+  <!-- Load our React component. -->
+  <script src="like_button.js"></script>
   <script>
 
     var _gaq = _gaq || [];
@@ -28,17 +33,6 @@
       ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
     })();
-
-
-    $('a[href^="#"]').on('click', function(event) {
-    var target = $(this.getAttribute('href'));
-    if( target.length ) {
-        event.preventDefault();
-        $('html, body').stop().animate({
-            scrollTop: target.offset().services
-        }, 1000);
-    }
-});
 
   </script>
 
@@ -196,7 +190,7 @@
           <div class="hero">
             <hgroup>
               <h2 style="color:chocolate">Welcome to</h2>
-              <h1>AT PEACE CENTER</h1>
+              <h1>AT PEACE CENTRE</h1>
               <h3>
                 <h3 style="color: white;">Talk to Us, be at Peace</h3>
               </h3>
@@ -530,7 +524,10 @@
           <ul class="adress">
             <span>Contact</span>
             <li>
-              <i class="fa fa-phone" aria-hidden="true"></i> <a href="#">+2348168399601, +2348188822892</a>
+              <i class="fa fa-phone" aria-hidden="true"></i> <a href="#">+2349066164170, 092914858</a>
+            </li>
+            <li>
+              <i class="fab fa-whatsapp" style=" font-size: 18px;"></i> <a style="margin-left: 5px;" href="#">+2349086003447</a>
             </li>
             <li>
               <i class="fa fa-map-marker" aria-hidden="true"></i> <a href="#">34 Shettima Ali Munguno Crescent, Utako
@@ -539,6 +536,7 @@
             <li>
               <i class="fa fa-envelope" aria-hidden="true"></i> <a href="#">atpeacecentre@gmail.com</a>
             </li>
+
           </ul>
         </div>
 
