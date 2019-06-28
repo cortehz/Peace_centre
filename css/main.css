@@ -1663,3 +1663,34 @@ label,
   color: #000;
   line-height: 30px;
 }
+
+.fb_container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.timeline iframe {
+  display: flex;
+  flex: 1;
+}
+
+.timeline {
+  display: flex;
+  flex: 1;
+}
+
+.video_embedd iframe {
+  display: flex;
+  flex: 2;
+}
+
+.video_embedd {
+  display: flex;
+  flex: 2;
+}
+
+.cont {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}

@@ -18,7 +18,6 @@
   <!-- Load our React component. -->
 
   <script>
-
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-23019901-1']);
     _gaq.push(['_setDomainName', "bootswatch.com"]);
@@ -26,11 +25,14 @@
     _gaq.push(['_trackPageview']);
 
     (function () {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      var ga = document.createElement('script');
+      ga.type = 'text/javascript';
+      ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') +
+        '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(ga, s);
     })();
-
   </script>
 
 </head>
@@ -94,7 +96,8 @@
         <div class="container">
           <!-- Brand and toggle get grouped for better mobile display -->
           <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+              data-target="#bs-example-navbar-collapse-1">
               <span class="sr-only">Toggle navigation</span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
@@ -699,7 +702,8 @@
           <figure>
             <h3>Care/School for kids with special abilities</h3>
             <p>It is great joy for a mother to hear the cry of her baby for the very first time. How will you feel as a
-              mother when a month later you are been told by the doctor that your child has autism or Down syndrome...</p>
+              mother when a month later you are been told by the doctor that your child has autism or Down syndrome...
+            </p>
             <a data-toggle="modal" href="#tallModal8" class="btn btn-primary">Read More</a>
           </figure>
           <img src="images/kids.jpg" class="img-responsive">
@@ -783,70 +787,85 @@
       <div class="col-md-2"></div>
     </div>
   </section>
+  <div>
+    <h1 style="text-align: center">Our Social Media Activities</h1>
+    <div class="cont">
+      <div class="timeline"> <iframe
+          src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fatpeacecentre01%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=1827786937477248"
+          width="auto" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+          allowTransparency="true" allow="encrypted-media"></iframe>
 
-  <!-- Forms
+      </div>
+      <div class="video_embedd">
+        <iframe
+          src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2F100011173487597%2Fvideos%2F544299815952463%2F&width=auto&show_text=true&appId=1827786937477248&height=540"
+          width="auto" height="540" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+          allowTransparency="true" allow="encrypted-media" allowFullScreen="false"></iframe>
+      </div>
+    </div>
+    <!-- Forms
       ================================================== -->
-  <div class="container-fluid bs-docs-section" id="contact">
-    <div class="row">
-      <div class="col-lg-12">
-        <div class="page-header">
-          <h1 id="forms">Contact Us</h1>
+    <div class="container-fluid bs-docs-section" id="contact">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="page-header">
+            <h1 id="forms">Contact Us</h1>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="well bs-component">
+            <form class="form-horizontal" name="contact" method="POST" netlify>
+              <fieldset>
+                <div class="form-group">
+                  <label for="inputEmail" class="col-lg-2 control-label">Email:</label>
+                  <div class="col-lg-10">
+                    <input type="email" name="email" class="form-control" id="inputEmail" placeholder="Email">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="inputPassword" class="col-lg-2 control-label">Name:</label>
+                  <div class="col-lg-10">
+                    <input type="text" name="name" class="form-control" id="inputPassword" placeholder="Name">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="textArea" class="col-lg-2 control-label">Your Message</label>
+                  <div class="col-lg-10">
+                    <textarea class="form-control" name="message" rows="3" id="textArea"></textarea>
+                    <span class="help-block">We will get back to you as soon as possible</span>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-lg-10">
+
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <div class="col-lg-10 col-lg-offset-2">
+                    <button type="submit" class="btn btn-primary" id="submit">Submit</button>
+                  </div>
+                </div>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+        <div class="col-lg-4 col-lg-offset-1">
+          <h1 class="text-center">Schedule:</h1>
+          <div class="appointment center-block">
+            <h4 class="hours text-center">Office Hours:</h4>
+            <p class="text-center">Monday - Friday, 8am - 5pm</p>
+            <br>
+            <h4 class="hours text-center">Call to Book Appointments</h4>
+            <p class="text-center">24hrs/day</p>
+          </div>
+
         </div>
       </div>
     </div>
-
-    <div class="row">
-      <div class="col-lg-6">
-        <div class="well bs-component">
-          <form class="form-horizontal" name="contact" method="POST" netlify>
-            <fieldset>
-              <div class="form-group">
-                <label for="inputEmail" class="col-lg-2 control-label">Email:</label>
-                <div class="col-lg-10">
-                  <input type="email" name="email" class="form-control" id="inputEmail" placeholder="Email">
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="inputPassword" class="col-lg-2 control-label">Name:</label>
-                <div class="col-lg-10">
-                  <input type="text" name="name" class="form-control" id="inputPassword" placeholder="Name">
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="textArea" class="col-lg-2 control-label">Your Message</label>
-                <div class="col-lg-10">
-                  <textarea class="form-control" name="message" rows="3" id="textArea"></textarea>
-                  <span class="help-block">We will get back to you as soon as possible</span>
-                </div>
-              </div>
-              <div class="form-group">
-                <div class="col-lg-10">
-
-                </div>
-              </div>
-
-              <div class="form-group">
-                <div class="col-lg-10 col-lg-offset-2">
-                  <button type="submit" class="btn btn-primary" id="submit">Submit</button>
-                </div>
-              </div>
-            </fieldset>
-          </form>
-        </div>
-      </div>
-      <div class="col-lg-4 col-lg-offset-1">
-        <h1 class="text-center">Schedule:</h1>
-        <div class="appointment center-block">
-          <h4 class="hours text-center">Office Hours:</h4>
-          <p class="text-center">Monday - Friday, 8am - 5pm</p>
-          <br>
-          <h4 class="hours text-center">Call to Book Appointments</h4>
-          <p class="text-center">24hrs/day</p>
-        </div>
-
-      </div>
-    </div>
-  </div>
   </div>
 
   <!-- footer -->
@@ -855,7 +874,8 @@
       <div class="row">
 
         <div class="col-md-4 col-sm-6 col-xs-12">
-          <span class="logo"><img class="img-responsive" src="https://i.imgur.com/fHdcgu1.png" width="100px" height="80px"></span>
+          <span class="logo"><img class="img-responsive" src="https://i.imgur.com/fHdcgu1.png" width="100px"
+              height="80px"></span>
           <p class="talk text-left"><em>talk to us, be at peace</em></p>
         </div>
 
@@ -887,7 +907,8 @@
               <i class="fa fa-phone" aria-hidden="true"></i> <a href="#">+2349066164170, 092914858</a>
             </li>
             <li>
-              <i class="fab fa-whatsapp" style=" font-size: 18px;"></i> <a style="margin-left: 5px;" href="#">+2349086003447</a>
+              <i class="fab fa-whatsapp" style=" font-size: 18px;"></i> <a style="margin-left: 5px;"
+                href="#">+2349086003447</a>
             </li>
             <li>
               <i class="fa fa-map-marker" aria-hidden="true"></i> <a href="#">34 Shettima Ali Munguno Crescent, Utako
@@ -913,13 +934,15 @@
   <script style="display: none !important;">
     ! function (e, t, r, n, c, a, l) {
       function i(t, r) {
-        return r = e.createElement('div'), r.innerHTML = '<a href="' + t.replace(/"/g, '&quot;') + '"></a>', r.childNodes[
-          0].getAttribute('href')
+        return r = e.createElement('div'), r.innerHTML = '<a href="' + t.replace(/"/g, '&quot;') + '"></a>', r
+          .childNodes[
+            0].getAttribute('href')
       }
 
       function o(e, t, r, n) {
-        for (r = '', n = '0x' + e.substr(t, 2) | 0, t += 2; t < e.length; t += 2) r += String.fromCharCode('0x' + e.substr(
-          t, 2) ^ n);
+        for (r = '', n = '0x' + e.substr(t, 2) | 0, t += 2; t < e.length; t += 2) r += String.fromCharCode('0x' + e
+          .substr(
+            t, 2) ^ n);
         return i(r)
       }
       try {
@@ -935,6 +958,10 @@
   <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
 
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous"
+    src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.3&appId=1827786937477248&autoLogAppEvents=1">
+  </script>
 </body>
 
 </html>
