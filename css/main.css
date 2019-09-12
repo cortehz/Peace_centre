@@ -1676,6 +1676,7 @@ label,
 
 .timeline {
   display: flex;
+  width: 300px;
   flex: 1;
 }
 
@@ -1693,4 +1694,8 @@ label,
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+}
+
+.h1_video {
+  text-align: center;
 }
