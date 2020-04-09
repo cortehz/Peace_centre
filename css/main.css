@@ -585,7 +585,7 @@ footer {
 }
 
 .img-responsive {
-  opacity: 0%;
+  /* opacity: 0%; */
   border-radius: 5px;
 }
 
